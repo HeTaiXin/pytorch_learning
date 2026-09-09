@@ -1,48 +1,26 @@
-# Python 通用
+# Python
 __pycache__/
 *.py[cod]
-*.so
-*.egg-info/
-.eggs/
-build/
-dist/
-
-# 虚拟环境
+*.pyo
+*.pyd
+.Python
+env/
 venv/
 .venv/
-env/
-ENV/
-
-# PyCharm / 其它 IDE
-.idea/
-.vscode/
 
 # Jupyter
 .ipynb_checkpoints/
 
-# PyTorch 模型/检查点/日志（别传大文件）
-*.pth
-*.pt
-*.ckpt
-*.bin
-checkpoints/
-weights/
-runs/
-logs/
-tensorboard/
-wandb/
-mlruns/
-
-# 数据（大数据集别传，只传小示例或放说明）
+# Data & Models (如果不想上传大文件)
 data/
-datasets/
-*.npy
-*.npz
-*.pkl
-# 如果只有很小的示例 csv 可单独放行，大 csv 仍忽略
+*.pth
+*.ckpt
+*.h5
 
-# 系统/临时
-.DS_Store
+# IDE
+.idea/
+.vscode/
+
+# OS
 Thumbs.db
-*.log
-.env
+Desktop.ini

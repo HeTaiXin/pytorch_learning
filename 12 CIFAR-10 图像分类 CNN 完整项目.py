@@ -233,7 +233,7 @@ if __name__ == '__main__':
     model = CNN(output_dim=nums_classes).to(device)
 
     # todo 3. 模型训练
-    loss_list = train(model, train_data)
+    # loss_list = train(model, train_data)
 
     # todo 4. 模型测试
     """
@@ -241,4 +241,4 @@ if __name__ == '__main__':
     image_classification_params02：bn_conv=False, batch=100, optim=SDG(lr=0.01, momentum=0.9)
     image_classification_params03：bn_conv=True, batch=100, optim=lr_scheduler(lr=0.01*0.1, [25,50,85])
     """
-    # evaluate(model, test_data)
+    evaluate(model, test_data)
